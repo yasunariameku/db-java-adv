@@ -55,9 +55,7 @@ public class SearchAppServlet extends HttpServlet {
         }
         
         
-        
-        
-        
+       
         List<Product> result = new ProductService().findById(product_name, price);
         
         System.out.println(result);
@@ -67,9 +65,7 @@ public class SearchAppServlet extends HttpServlet {
         request.getRequestDispatcher("searchResult.jsp").forward(request, response);
 
         
-        
-         
-        
+       
     
         
 	}
